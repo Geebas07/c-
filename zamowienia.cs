@@ -97,10 +97,10 @@ public class Zamowienie
         }
         return suma;
     }
-    public string ToString(Pozycja p)
+    public string ToString(List<Pozycja> lista)
     {
         string spisPozycji = "Spis pozycji zamówienia:\n";
-        double rabat_sum;
+        double rabat_sum=0;
         
         for(int i=0; i< lista.Count; i++)
         {
